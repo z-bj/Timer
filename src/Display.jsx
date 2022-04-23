@@ -7,7 +7,7 @@ import Speed from "./Speed";
 function Display({ numberForm }) {
   return (
     <>
-      <Button letiant="contained">Start</Button>
+      <Button variant="contained">Start</Button>
       <Clock numberForm={numberForm} />
       <PauseResume />
       <Speed />
