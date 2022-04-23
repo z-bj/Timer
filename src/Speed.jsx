@@ -8,9 +8,9 @@ import {
 import React, { useState } from "react";
 
 function Speed() {
-  const [value, setValue] = useState(1);
+  const [speed, setSpeed] = useState(1);
 
-  const handleChange = (e) => setValue(e.target.value);
+  const handleChange = (e) => setSpeed(e.target.value);
 
   return (
     <FormControl>
@@ -18,12 +18,12 @@ function Speed() {
       <RadioGroup
         aria-labelledby="demo-controlled-radio-buttons-group"
         name="controlled-radio-buttons-group"
-        value={value}
+        value={speed}
         onChange={handleChange}
       >
-        <FormControlLabel value="1" control={<Radio />} label="1.0X" />
-        <FormControlLabel value="1.5" control={<Radio />} label="1.5X" />
-        <FormControlLabel value="2" control={<Radio />} label="2.0X" />
+        <FormControlLabel value="1000" control={<Radio />} label="1.0X" />
+        <FormControlLabel value="750" control={<Radio />} label="1.5X" />
+        <FormControlLabel value="500" control={<Radio />} label="2.0X" />
       </RadioGroup>
     </FormControl>
   );

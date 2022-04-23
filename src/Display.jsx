@@ -1,7 +1,18 @@
+import { Button } from "@mui/material";
 import React from "react";
+import Clock from "./Clock";
+import PauseResume from "./PauseResume";
+import Speed from "./Speed";
 
-function Display() {
-  return <h1>MM:SS</h1>;
+function Display({ numberForm }) {
+  return (
+    <>
+      <Button letiant="contained">Start</Button>
+      <Clock numberForm={numberForm} />
+      <PauseResume />
+      <Speed />
+    </>
+  );
 }
 
 export default Display;

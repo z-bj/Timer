@@ -83,9 +83,9 @@
     "@babel/template" "^7.16.7"
     "@babel/types" "^7.17.0"
 
-"@babel/helper-hoist-variables@^7.16.7":
+"@babel/helper-hoist-letiables@^7.16.7":
   "integrity" "sha512-m04d/0Op34H5v7pbZw6pSKP7weA6lsMvfiIAMeIvkY/R4xQtBSMFEigu9QTZ2qB/9l22vsxtM8a+Q8CzD255fg=="
-  "resolved" "https://registry.npmjs.org/@babel/helper-hoist-variables/-/helper-hoist-variables-7.16.7.tgz"
+  "resolved" "https://registry.npmjs.org/@babel/helper-hoist-letiables/-/helper-hoist-letiables-7.16.7.tgz"
   "version" "7.16.7"
   dependencies:
     "@babel/types" "^7.16.7"
@@ -227,7 +227,7 @@
     "@babel/generator" "^7.17.9"
     "@babel/helper-environment-visitor" "^7.16.7"
     "@babel/helper-function-name" "^7.17.9"
-    "@babel/helper-hoist-variables" "^7.16.7"
+    "@babel/helper-hoist-letiables" "^7.16.7"
     "@babel/helper-split-export-declaration" "^7.16.7"
     "@babel/parser" "^7.17.9"
     "@babel/types" "^7.17.0"
