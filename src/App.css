@@ -3,14 +3,14 @@
 }
 
 .App-header {
-  background-color: #154a58;
+  background-color: #90d3e4;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgba(0, 0, 0, 0.781);
 }
 
 

@@ -5,11 +5,9 @@ import {
   Radio,
   RadioGroup,
 } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 
-function Speed() {
-  const [speed, setSpeed] = useState(1);
-
+function RadioSpeed({ speed, setSpeed }) {
   const handleChange = (e) => setSpeed(e.target.value);
 
   return (
@@ -29,4 +27,4 @@ function Speed() {
   );
 }
 
-export default Speed;
+export default RadioSpeed;

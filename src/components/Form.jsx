@@ -1,13 +1,14 @@
 import { TextField } from "@mui/material";
 import React from "react";
 
-function Form({ numberForm, handleChange }) {
+function Form({ dataForm, handleChange }) {
   return (
     <>
       <TextField
         inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
-        value={numberForm}
+        value={dataForm}
         onChange={handleChange}
+        placeholder="How many minutes? ⏰"
       />
     </>
   );

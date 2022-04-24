@@ -4,7 +4,7 @@ import React from "react";
 function PauseResume() {
   return (
     <ButtonGroup variant="contained" aria-label="outlined primary button group">
-      <Button>Pause</Button>
+      <Button color="secondary">Pause</Button>
       <Button>Resume</Button>
     </ButtonGroup>
   );
