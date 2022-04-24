@@ -5,11 +5,9 @@ import {
   Radio,
   RadioGroup,
 } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 
-function Speed() {
-  const [speed, setSpeed] = useState(1);
-
+function RadioSpeed({ speed, setSpeed }) {
   const handleChange = (e) => setSpeed(e.target.value);
 
   return (
@@ -20,13 +18,14 @@ function Speed() {
         name="controlled-radio-buttons-group"
         value={speed}
         onChange={handleChange}
+        row
       >
-        <FormControlLabel value="1000" control={<Radio />} label="1.0X" />
-        <FormControlLabel value="750" control={<Radio />} label="1.5X" />
-        <FormControlLabel value="500" control={<Radio />} label="2.0X" />
+        <FormControlLabel value={1000} control={<Radio />} label="1.0X" />
+        <FormControlLabel value={750} control={<Radio />} label="1.5X" />
+        <FormControlLabel value={500} control={<Radio />} label="2.0X" />
       </RadioGroup>
     </FormControl>
   );
 }
 
-export default Speed;
+export default RadioSpeed;

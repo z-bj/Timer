@@ -1,19 +1,23 @@
 import { useState } from "react";
 import Form from "./components/Form";
-import Display from "./components/Display";
+import Clock from "./components/Clock";
+import RadioSpeed from "./components/RadioSpeed";
 import "./App.css";
 
 function App() {
-  const [numberForm, setNumberForm] = useState(0);
-  const handleChange = (e) => setNumberForm(e.target.value);
+  const [dataForm, setDataForm] = useState(0);
+  const [speed, setSpeed] = useState(1000);
 
-  // useInterval(time, speed);
+  const handleChange = (e) => setDataForm(e.target.value);
 
   return (
     <div className="App">
       <header className="App-header">
-        <Form numberForm={numberForm} handleChange={handleChange} />
-        <Display numberForm={numberForm} />
+        <h3>Countdown</h3>
+        <Form dataForm={dataForm} handleChange={handleChange} />
+        <hr />
+        <Clock dataForm={dataForm} speed={speed} />
+        <RadioSpeed speed={speed} setSpeed={setSpeed} />
       </header>
     </div>
   );
