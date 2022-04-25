@@ -64,11 +64,8 @@ export default Clock;
 //     <h1>{`${rhours00} : ${rminutes00} : ${rseconds00}`}</h1>
 //   </>
 // );
-
-// Display 2 digits
-// rhours = rhours < 10 ? "0" + rhours : rhours;
-// rminutes = rminutes < 10 ? "0" + rminutes : rminutes;
-// rsecondes = rsecondes < 10 ? "0" + rsecondes : rsecondes;
+//
+// return time <= 0 ? <h1>00:00:00</h1> : <h1>{time}</h1>;
 
 // return rhours + ":" + rminutes + ":" + rsecondes;
 
@@ -76,5 +73,3 @@ export default Clock;
 // if (!min || min < 0) {
 //   return;
 // }
-
-// return time <= 0 ? <h1>00:00:00</h1> : <h1>{time}</h1>;

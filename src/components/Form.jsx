@@ -8,7 +8,7 @@ function Form({ dataForm, handleChange }) {
         inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
         value={dataForm}
         onChange={handleChange}
-        placeholder="How many minutes? ⏰"
+        placeholder="    Enter a # of minutes   "
       />
     </>
   );
